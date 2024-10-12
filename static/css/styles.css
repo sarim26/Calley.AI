@@ -21,10 +21,10 @@ header {
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Ensure space between elements */
   padding: 0.3rem 1.25rem;
   background-color: white;
-  position: relative; /* Keep the header relative */
+  position: relative;
 }
 
 .logo {
@@ -37,10 +37,8 @@ header {
 
 .join-button-container {
   display: flex; /* Use flexbox */
-  justify-content: flex-end; /* Align to the right */
   margin-left: auto; /* Push the button to the right */
   margin-top: 0.625rem; /* Keep the top margin */
-  flex-grow: 1; /* Allow it to grow and fill space */
 }
 
 .join-button {
@@ -57,7 +55,6 @@ header {
 .join-button:hover {
   background-color: #732bf7;
 }
-
 
 .hero {
   align-items: center;
