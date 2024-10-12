@@ -21,10 +21,10 @@ header {
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensure space between elements */
+  justify-content: space-between;
   padding: 0.3rem 1.25rem;
   background-color: white;
-  position: relative;
+  position: relative; /* Keep the header relative */
 }
 
 .logo {
@@ -36,9 +36,9 @@ header {
 }
 
 .join-button-container {
-  display: flex; /* Use flexbox */
-  margin-left: auto; /* Push the button to the right */
-  margin-top: 0.625rem; /* Keep the top margin */
+  position: absolute;
+  top: 0.625rem;
+  right: 1.25rem;
 }
 
 .join-button {
