@@ -369,7 +369,7 @@ header {
   }
 
   .hero-img {
-    width: 80%; /* Adjust image width */
+    width: 90%; /* Adjust image width to be more responsive */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center image */
   }
@@ -411,6 +411,10 @@ header {
 }
 
 @media (max-width: 480px) { /* Extra Small Devices */
+  body {
+    font-size: 0.875rem; /* Font size adjustment for extra small devices */
+  }
+
   .hero h2 {
     font-size: 1.5rem; /* Further reduce font size for smaller screens */
   }
@@ -428,5 +432,16 @@ header {
   .button {
     padding: 0.625rem 1.25rem; /* Adjust button padding */
     font-size: 0.9rem; /* Adjust button font size */
+  }
+
+  .feature-item,
+  .use-case-item {
+    padding: 1rem; /* Ensure proper padding */
+    margin: 0.5rem; /* Consistent spacing */
+    width: 100%; /* Ensure full width on small screens */
+  }
+
+  .hero-img {
+    width: 100%; /* Full width for the image */
   }
 }
