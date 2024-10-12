@@ -338,7 +338,7 @@ header {
 
 @media (max-width: 768px) { /* Mobile */
   body {
-    font-size: 14px; /* Font size adjustment for mobile */
+    font-size: 1rem; /* Font size adjustment for mobile */
   }
 
   header {
@@ -407,5 +407,26 @@ header {
 
   .popup-content {
     width: 90%; /* Make popup content width responsive */
+  }
+}
+
+@media (max-width: 480px) { /* Extra Small Devices */
+  .hero h2 {
+    font-size: 1.5rem; /* Further reduce font size for smaller screens */
+  }
+
+  .hero p {
+    font-size: 0.9rem; /* Further reduce paragraph font size */
+  }
+
+  .features h2,
+  .use-cases h2,
+  .contact h2 {
+    font-size: 1.5rem; /* Adjust section titles */
+  }
+
+  .button {
+    padding: 0.625rem 1.25rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust button font size */
   }
 }
