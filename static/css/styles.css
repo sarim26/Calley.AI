@@ -389,8 +389,13 @@ header {
   .feature-item,
   .use-case-item {
     padding: 1rem; /* Increase padding */
-    max-width: 100%; /* Full width */
+    max-width: 100%; /* Ensure items don't exceed full width */
     margin: 0.5rem auto; /* Center items with spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .feature-item {
+    width: calc(100% - 1rem); /* Full width minus margin */
   }
 
   .features h2,
