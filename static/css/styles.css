@@ -339,6 +339,7 @@ header {
 @media (max-width: 768px) { /* Mobile */
   body {
     font-size: 1rem; /* Adjusting base font size */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
   header {
@@ -378,24 +379,21 @@ header {
     padding: 1.5rem 1rem; /* Adjust padding for features */
     width: 100%; /* Ensure full width */
     box-shadow: none; /* Remove box shadow for edge-to-edge */
+    overflow: hidden; /* Prevent overflow */
   }
 
-  .features-grid,
-  .use-case-grid {
-    grid-template-columns: 1fr; /* Stack items vertically */
+  .features-grid {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
     width: 100%; /* Ensure full width */
   }
 
-  .feature-item,
-  .use-case-item {
-    padding: 1rem; /* Increase padding */
-    max-width: 100%; /* Ensure items don't exceed full width */
-    margin: 0.5rem auto; /* Center items with spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
-
   .feature-item {
-    width: calc(100% - 1rem); /* Full width minus margin */
+    width: 100%; /* Full width for items */
+    max-width: 100%; /* Ensure items don't exceed full width */
+    padding: 1rem; /* Increase padding */
+    margin: 0.5rem 0; /* Vertical margin for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
   }
 
   .features h2,
@@ -424,6 +422,7 @@ header {
     width: 90%; /* Make popup content width responsive */
   }
 }
+
 
 /* Additional mobile adjustments */
 @media (max-width: 480px) { /* Extra small devices */
