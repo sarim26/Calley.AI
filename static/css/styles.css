@@ -308,73 +308,104 @@ header {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; 
-  }
-
+@media (max-width: 1024px) { /* Tablet */
   header {
-    flex-direction: column; 
-    align-items: flex-start; 
-    padding: 1rem; 
-  }
-
-  .logo {
-    margin-bottom: 1rem; 
+    padding: 1rem; /* Padding adjustment */
   }
 
   .hero {
-    flex-direction: column; 
-    text-align: center; 
-    height: auto; 
-    padding: 1rem; 
+    padding: 2rem 1rem; /* Adjust padding */
   }
 
-  .hero-text {
-    max-width: 100%; 
-    margin-bottom: 1rem; 
+  .hero h2 {
+    font-size: 2.5rem; /* Reduce font size */
   }
 
-  .hero-image {
-    width: 100%; 
-    margin-top: 1rem; 
-  }
-
-  .hero-img {
-    width: 90%; 
-    height: auto; 
-    margin-left: auto; 
-    margin-right: auto; 
+  .hero p {
+    font-size: 1rem; /* Reduce paragraph font size */
   }
 
   .features-grid,
   .use-case-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
   }
 
   .feature-item,
   .use-case-item {
-    padding: 1rem; 
-    max-width: 100%; 
-    margin: 0 auto; 
+    margin: 0.5rem; /* Add spacing between items */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  body {
+    font-size: 14px; /* Font size adjustment for mobile */
+  }
+
+  header {
+    flex-direction: column; /* Stack header items */
+    align-items: flex-start; /* Align items to the start */
+    padding: 1rem; /* Add padding for mobile */
+  }
+
+  .logo {
+    margin-bottom: 1rem; /* Margin below logo */
+  }
+
+  .hero {
+    flex-direction: column; /* Stack hero content */
+    text-align: center; /* Center text */
+    height: auto; /* Height adjusts automatically */
+    padding: 2rem 1rem; /* Add more padding */
+  }
+
+  .hero-text {
+    max-width: 90%; /* Allow some margin */
+    margin: 0 auto 1rem; /* Center the text */
+  }
+
+  .hero-image {
+    width: 100%; /* Full width for the image */
+    margin-top: 1rem; /* Margin above image */
+  }
+
+  .hero-img {
+    width: 80%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center image */
+  }
+
+  .features {
+    padding: 1.5rem 1rem; /* Adjust padding for features */
+  }
+
+  .features-grid,
+  .use-case-grid {
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+
+  .feature-item,
+  .use-case-item {
+    padding: 1rem; /* Increase padding */
+    max-width: 100%; /* Full width */
+    margin: 0.5rem auto; /* Center items with spacing */
   }
 
   .features h2,
   .use-cases h2,
   .contact h2 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem; /* Adjust title font sizes */
   }
 
   .contact .button {
-    font-size: 1rem; 
-    padding: 0.75rem 1.5rem; 
+    font-size: 1rem; /* Adjust button font size */
+    padding: 0.75rem 1.5rem; /* Adjust padding */
   }
 
   .footer {
-    padding: 1rem; 
+    padding: 1rem; /* Add padding for footer */
   }
 
   .popup-content {
-    width: 90%;
+    width: 90%; /* Make popup content width responsive */
   }
 }
