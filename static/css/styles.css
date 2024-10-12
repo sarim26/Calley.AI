@@ -27,7 +27,6 @@ header {
   position: relative; /* Keep the header relative */
 }
 
-
 .logo {
   height: auto;
   width: 7.5rem;
@@ -41,6 +40,7 @@ header {
   justify-content: flex-end; /* Align to the right */
   margin-left: auto; /* Push the button to the right */
   margin-top: 0.625rem; /* Keep the top margin */
+  flex-grow: 1; /* Allow it to grow and fill space */
 }
 
 .join-button {
