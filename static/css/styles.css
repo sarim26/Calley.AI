@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   padding: 0.3rem 1.25rem;
   background-color: white;
-  position: relative; /* Keep the header relative */
+  position: relative;
 }
 
 .logo {
