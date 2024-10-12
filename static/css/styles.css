@@ -336,7 +336,7 @@ header {
   }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 800px) { /* Mobile */
   body {
     font-size: 1rem; /* Font size adjustment for mobile */
   }
