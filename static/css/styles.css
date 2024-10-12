@@ -338,9 +338,7 @@ header {
 
 @media (max-width: 768px) { /* Mobile */
   body {
-    font-size: 14px; /* Font size adjustment for mobile */
-    padding: 0; /* Remove body padding */
-    margin: 0; /* Remove body margin */
+    font-size: 1rem; /* Adjusting base font size */
   }
 
   header {
@@ -371,18 +369,21 @@ header {
   }
 
   .hero-img {
-    width: 80%; /* Adjust image width */
+    width: 100%; /* Adjust image width to cover the screen */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center image */
   }
 
   .features {
     padding: 1.5rem 1rem; /* Adjust padding for features */
+    width: 100%; /* Ensure full width */
+    box-shadow: none; /* Remove box shadow for edge-to-edge */
   }
 
   .features-grid,
   .use-case-grid {
     grid-template-columns: 1fr; /* Stack items vertically */
+    width: 100%; /* Ensure full width */
   }
 
   .feature-item,
@@ -398,6 +399,12 @@ header {
     font-size: 1.5rem; /* Adjust title font sizes */
   }
 
+  .contact {
+    padding: 2.5rem 1rem; /* Adjust padding for contact */
+    width: 100%; /* Ensure full width */
+    box-shadow: none; /* Remove box shadow for edge-to-edge */
+  }
+
   .contact .button {
     font-size: 1rem; /* Adjust button font size */
     padding: 0.75rem 1.5rem; /* Adjust padding */
@@ -405,6 +412,7 @@ header {
 
   .footer {
     padding: 1rem; /* Add padding for footer */
+    width: 100%; /* Ensure full width */
   }
 
   .popup-content {
