@@ -336,9 +336,11 @@ header {
   }
 }
 
-@media (max-width: 800px) { /* Mobile */
+@media (max-width: 768px) { /* Mobile */
   body {
-    font-size: 1rem; /* Font size adjustment for mobile */
+    font-size: 14px; /* Font size adjustment for mobile */
+    padding: 0; /* Remove body padding */
+    margin: 0; /* Remove body margin */
   }
 
   header {
@@ -369,7 +371,7 @@ header {
   }
 
   .hero-img {
-    width: 90%; /* Adjust image width to be more responsive */
+    width: 80%; /* Adjust image width */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center image */
   }
@@ -410,38 +412,28 @@ header {
   }
 }
 
-@media (max-width: 480px) { /* Extra Small Devices */
+/* Additional mobile adjustments */
+@media (max-width: 480px) { /* Extra small devices */
   body {
-    font-size: 0.875rem; /* Font size adjustment for extra small devices */
+    font-size: 12px; /* Further font size adjustment for very small screens */
   }
 
   .hero h2 {
-    font-size: 1.5rem; /* Further reduce font size for smaller screens */
+    font-size: 2rem; /* Reduce heading size for very small screens */
   }
 
   .hero p {
-    font-size: 0.9rem; /* Further reduce paragraph font size */
+    font-size: 0.9rem; /* Smaller paragraph font size */
   }
 
   .features h2,
   .use-cases h2,
   .contact h2 {
-    font-size: 1.5rem; /* Adjust section titles */
+    font-size: 1.25rem; /* Adjust title font sizes for very small screens */
   }
 
-  .button {
-    padding: 0.625rem 1.25rem; /* Adjust button padding */
-    font-size: 0.9rem; /* Adjust button font size */
-  }
-
-  .feature-item,
-  .use-case-item {
-    padding: 1rem; /* Ensure proper padding */
-    margin: 0.5rem; /* Consistent spacing */
-    width: 100%; /* Ensure full width on small screens */
-  }
-
-  .hero-img {
-    width: 100%; /* Full width for the image */
+  .button,
+  .contact .button {
+    padding: 0.5rem 1rem; /* Adjust button padding */
   }
 }
