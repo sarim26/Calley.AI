@@ -20,8 +20,8 @@ header {
   top: 0;
   z-index: 100;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Space between logo and button */
   padding: 0.3rem 1.25rem;
   background-color: white;
   position: relative;
@@ -36,9 +36,9 @@ header {
 }
 
 .join-button-container {
-  position: absolute;
-  top: 0.625rem;
-  right: 1.25rem;
+  margin-left: auto; /* Push the button to the right */
+  display: flex; /* Ensure it can align properly */
+  align-items: center; /* Center vertically with the logo */
 }
 
 .join-button {
@@ -55,6 +55,7 @@ header {
 .join-button:hover {
   background-color: #732bf7;
 }
+
 
 .hero {
   align-items: center;
